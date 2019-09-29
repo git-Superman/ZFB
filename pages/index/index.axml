@@ -1,0 +1,81 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+<swiper indicator-dots="{{true}}" >
+  <block a:for="{{['#4A90E2','#F5A623']}}">
+    <swiper-item class='swiper-item'>
+      <image mode="aspectFill" src="/images/main-banner.png"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='header'>
+  <view onTap="handleClick">
+    <text>输入您想租用的产品进行搜索</text>
+    <image src="/images/icon/main-searchicon.png"/>
+  </view>
+</view>
+<view class='contenner'>
+
+<view class='activity'>
+  <view class='activity-left'>
+    <image src="/images/main-ggw1.png"/>
+  </view>
+  <view class='activity-right'>
+    <image src="/images/main-ggw2.png"/>
+    <image src="/images/main-ggw3.png"/>
+  </view>
+</view>
+
+<view class='cart'>
+  <view class='title'>
+    <image mode="widthFix" src="/images/main-rmzptitle.png"/>
+  </view>
+  <view class='cont'>
+    <view class='cont-item' a:for="{{['',2,3]}}">
+      <image mode="widthFix" src="/images/main-spimg.png"/>
+      <text>camera单反相机</text>
+      <text class='red'>￥10.00/天起</text>
+    </view>
+  </view>
+  <view class='cont'>
+    <view class='cont-item' a:for="{{[1,2,3]}}">
+      <image mode="widthFix" src="/images/main-spimg.png"/>
+      <text>camera单反相机</text>
+      <text class='red'>￥10.00/天起</text>
+    </view>
+  </view>
+</view>
+
+<view class='icon-title'>
+  <view class='title'>
+    <image mode="widthFix" src="/images/main-rmfltitle.png"/>
+  </view>
+  <view class='icon'>
+    <view class='icon-item' a:for="{{icon}}">
+      <image mode="widthFix" src="{{item.url}}"/>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>
+
+
+<view class='cart'>
+  <view class='title'>
+    <image mode="widthFix" src="/images/main-hwtjtitle.png"/>
+  </view>
+  <view class='cont'>
+    <view class='cont-item' a:for="{{['',2,3]}}">
+      <image mode="widthFix" src="/images/main-spimg.png"/>
+      <text>camera单反相机</text>
+      <text class='red'>￥10.00/天起</text>
+    </view>
+  </view>
+  <view class='cont'>
+    <view class='cont-item' a:for="{{[1,2,3]}}">
+      <image mode="widthFix" src="/images/main-spimg.png"/>
+      <text>camera单反相机</text>
+      <text class='red'>￥10.00/天起</text>
+    </view>
+  </view>
+</view>
+
+
+</view>

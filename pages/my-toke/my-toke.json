@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "收货地址",
+  "usingComponents": {
+    "address-picker": "/pages/AddressPicker/AddressPicker",
+    "popup": "mini-antui/es/popup/index"
+    }
+}

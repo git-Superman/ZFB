@@ -1,0 +1,47 @@
+.my{
+  box-sizing: border-box;
+  padding:8px 12px;
+}
+.title{
+  background-color:#2EA5F5;
+  display:flex;
+  box-sizing: border-box;
+  padding:12px;
+  border-radius:7px;
+  color:#fff;
+  font-weight:bold;
+  align-items:center;
+}
+.title image{
+  width:50px;
+  margin-right:12px;
+  border-radius:50%;
+}
+.myul{
+  display:flex;
+  flex-flow: column;
+}
+.myli{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color:#fff;
+  margin-top:6px;
+  box-sizing: border-box;
+  padding:14px 10px;
+  color:#00A0E9;
+  font-weight:bold;
+  border-radius:7px;
+}
+.myli view{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  font-weight: normal;
+  font-size:12px;
+  color:#9E9E9E;
+}
+.myli view image{
+  width:10px;
+  margin-left:8px;
+}

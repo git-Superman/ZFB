@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "vtabs": "mini-antui/es/vtabs/index",
+    "vtab-content": "mini-antui/es/vtabs/vtab-content/index",
+    "collapse": "mini-antui/es/collapse/index",
+    "collapse-item": "mini-antui/es/collapse/collapse-item/index"
+  },
+  "defaultTitle": "分类"
+}

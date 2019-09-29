@@ -1,0 +1,231 @@
+.bannerTitle{
+  font-size:0;
+}
+.bannerTitle image{
+  width:100%;
+}
+.content{
+  box-sizing: border-box;
+  padding: 12px 12px 0 12px;
+  background-color:#fff;
+}
+.oTop{
+  display:flex;
+  align-items:flex-end;
+}
+.oTop .left .t1{
+  width:100%;
+  overflow: hidden;
+  color:#9E9E9E;
+  font-size:12px;
+}
+.oTop .right{
+  width:60px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.oTop .right image{
+  width:26px;
+  margin-bottom:20px;
+}
+.t1 text:nth-child(2){
+  font-size:16px;
+  color:#FF3000;
+  padding:0 3px;
+}
+.t1 text:nth-child(2)::before{
+  content:'¥';
+  font-size: 12px;
+}
+.t2{
+  display:block;
+  padding:5px 0;
+  color:#373737;
+}
+.t3 text{
+  display:inline-block;
+  padding:4px 8px;
+  background-color:#E9E9E9;
+  color:#666666;
+  border-radius:20px 20px;
+  font-size:12px;
+  margin:6px 5px;
+}
+.oBot{
+  border-top:1px dashed #C9C9C9;
+  display:flex;
+  padding:12px 0;
+}
+.oBot-item{
+  display:flex;
+  align-items:center;
+  margin-right:12px;
+  font-size:12px;
+  color:#9E9E9E;
+}
+.oBot-item image{
+  width:16px;
+  margin-right:3px;
+}
+.title-lg{
+  display:flex;width:100%;
+  justify-content: space-between;
+  border-top:3px solid #E9E9E9;
+  background-color:#fff;
+  box-sizing: border-box;
+  padding:12px 16px;
+  align-items: center;
+  color:#9E9E9E;
+  font-size:14px;
+}
+.title-lg-test text:last-child{
+  font-size:16px;
+  color:#666666;
+  padding-left:6px;
+}
+.title-lg-nav image{
+  width:8px;
+}
+.tabs{
+  border-top:3px solid #E9E9E9;
+}
+.tab-content image{
+  width:100%;
+}
+/* 优惠券 */
+.boxBottom{
+  background-color:#fff;
+  min-height: 380px;
+  box-sizing: border-box;
+  padding:16px 12px 12px;
+}
+.b-item-title{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom:5px;
+  border-bottom:1px solid #E8EFF3;
+}
+.b-item-title text{
+  font-weight: bold;
+}
+.b-item-title image{
+  width:20px;
+}
+.b-item-content{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+}
+.content-item{
+  width:90%;
+  background-color:#E8EFF3;
+  display:flex;
+  border-radius:7px;
+  overflow: hidden;
+  margin-top:12px;
+}
+.content-item .l{
+  width:30%;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items:center;
+  background-color:#00A0E9;
+  color:#FFFFFF;
+  font-weight: bold;
+  padding:8px 0;
+}
+.content-item .l text:last-child{
+  font-size:14px;
+  font-weight: normal;
+}
+.content-item .r{
+  display:flex;
+  width:70%;
+  box-sizing: border-box;
+  padding:12px;
+  justify-content: space-between;
+  align-items:center;
+}
+.content-item .r view{
+  font-size:14px;
+  color:#666666;
+  width:70%;
+}
+.content-item .r view text{
+  display:block;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content-item .r view text:first-child{
+  color:#373737;
+  padding-bottom:5px;
+}
+.content-item .r .btn{
+  display:block;
+  flex-shrink: 0;
+  width:48px;
+  height:22px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  border:1px solid #00A0E9;
+  border-radius:20px 20px;
+  color:#00A0E9;
+}
+.content-item .r .btn.action{
+  background-color:#00A0E9;
+  color:#fff;
+}
+.boxBottom .button{
+  width:80px;
+  height:26px;
+  margin:36px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  border:1px solid #00A0E9;
+  border-radius:20px 20px;
+  color:#00A0E9;
+}
+/* 立即租赁 */
+.footer{
+  width:100%;
+  height:60px;
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content: space-between;
+  background-color:#fff;
+  align-items:center;
+}
+.footer .f-l{
+    padding:8px 0;
+}
+.footer .f-l image{
+  width:26px;
+  margin:0 12px;
+}
+.footer .f-r{
+  display:flex;
+  align-items:center;
+}
+.footer .f-r text:nth-child(1){
+  color:#666666;
+}
+.footer .f-r text:nth-child(2){
+  color:#FF3608;
+}
+.footer .f-r text:nth-child(3){
+  display: flex;
+  height:60px;
+  width:100px;
+  align-items:center;
+  justify-content: center;
+  color:#FFFFFF;
+  margin-left:12px;
+  background-color:#00A0E9;
+}

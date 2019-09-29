@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "我的订单",
+  "usingComponents": {
+    "popup": "mini-antui/es/popup/index"
+    }
+}

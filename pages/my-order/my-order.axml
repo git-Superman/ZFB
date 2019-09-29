@@ -1,0 +1,141 @@
+<view class='order'>
+  <text a:for="{{list}}" class="{{inx == index ? 'action' : ''}}" onTap="handleInx" data-id="{{index}}">{{item}}</text>
+</view>
+<!-- 待审核 -->
+<view class="content" hidden="{{!(inx == 1 || inx == 0)}}">
+  <view class='content-item'>
+    <view class="liat-item">
+      <view class='a'>
+        <image mode="widthFix" src="/images/spxq-cnxhimg.png"/>
+      </view>
+      <view class='b'>
+        <text>vcr8kkk相机</text>
+        <text>租期：2019.8.1-2019.10.1</text>
+        <text>租赁方式：邮寄</text>
+      </view>
+      <view class="c c1">
+        <text>待审核</text>
+      </view>
+    </view>
+    <view class="liat-item-bot">支付租金：<text>￥5000.00</text></view>
+  </view>
+</view>
+<!-- 待发货 -->
+<view class="content" hidden="{{!(inx == 2 || inx == 0)}}">
+  <view class='content-item'>
+    <view class="liat-item">
+      <view class='a'>
+        <image mode="widthFix" src="/images/spxq-cnxhimg.png"/>
+      </view>
+      <view class='b'>
+        <text>vcr8kkk相机</text>
+        <text>租期：2019.8.1-2019.10.1</text>
+        <text>租赁方式：邮寄</text>
+      </view>
+      <view class="c c2">
+        <text>待发货</text>
+      </view>
+    </view>
+    <view class="liat-item-bot">支付租金：<text>￥5000.00</text></view>
+  </view>
+</view>
+<!-- 租用中 -->
+<view class="content" hidden="{{!(inx == 3 || inx == 0)}}">
+  <view class='content-item'>
+    <view class="liat-item">
+      <view class='a'>
+        <image mode="widthFix" src="/images/spxq-cnxhimg.png"/>
+      </view>
+      <view class='b'>
+        <text>vcr8kkk相机</text>
+        <text>租期：2019.8.1-2019.10.1</text>
+        <text>租赁方式：邮寄</text>
+      </view>
+      <view class="c c3">
+        <text>租用中</text>
+        <view onTap="onButtomBtnTap">操作</view>
+      </view>
+    </view>
+    <view class="liat-item-bot">支付租金：<text>￥5000.00</text></view>
+  </view>
+</view>
+<!-- 已逾期 -->
+<view class="content"  hidden="{{!(inx == 4 || inx == 0)}}">
+  <view class='content-item'>
+    <view class="liat-item">
+      <view class='a'>
+        <image mode="widthFix" src="/images/spxq-cnxhimg.png"/>
+      </view>
+      <view class='b'>
+        <text>vcr8kkk相机</text>
+        <text>租期：2019.8.1-2019.10.1</text>
+        <text>租赁方式：邮寄</text>
+      </view>
+      <view class="c c4">
+        <text>已逾期</text>
+        <view onTap="onToTap">补款</view>
+      </view>
+    </view>
+    <view class="liat-item-bot">支付租金：<text>￥5000.00</text></view>
+  </view>
+</view>
+<!-- 已完结 -->
+<view class="content" hidden="{{!(inx == 5 || inx == 0)}}">
+  <view class='content-item'>
+    <view class="liat-item">
+      <view class='a'>
+        <image mode="widthFix" src="/images/spxq-cnxhimg.png"/>
+      </view>
+      <view class='b'>
+        <text>vcr8kkk相机</text>
+        <text>租期：2019.8.1-2019.10.1</text>
+        <text>租赁方式：邮寄</text>
+      </view>
+      <view class="c c5">
+        <text>已完结</text>
+        <image mode="widthFix" src="/images/wddd-delet.png"/>
+      </view>
+    </view>
+    <view class="liat-item-bot">支付租金：<text>￥5000.00</text></view>
+  </view>
+</view>
+<!-- 租用中 -->
+<view>
+  <popup show="{{showBottom}}" position="bottom" onClose="onPopupClose" zIndex='9999'>
+    <view class="boxBottom">
+      <view class='b-item-title'>
+        <text>操作</text>
+        <image onTap="onPopupClose" mode="widthFix" src="/images/icon/x.png"/>
+      </view>
+      <view class="s">续 租</view>
+      <view class="s">买 断</view>
+      <view class="s">确认完成</view>
+    </view>
+  </popup>
+</view>
+<!-- 逾期 -->
+<view>
+  <popup show="{{showTo}}" position="bottom" onClose="onPopupClose" zIndex='9999'>
+    <view class="boxBottom b">
+      <view class='b-item-title'>
+        <text>补款</text>
+        <image onTap="onPopupClose" mode="widthFix" src="/images/icon/x.png"/>
+      </view>
+      <view class="text">
+        <text>您已逾期：2天10小时5分钟</text>
+        <text>芝麻信誉、花呗额度已降低，下次请注意</text>
+      </view>
+      <view class="msg">
+        <text>补租租期</text>
+        <view>
+          <text>3期(到期归还)</text>
+          <text class="action">5期(期满免归还)</text>
+        </view>
+      </view>
+    </view>
+    <view class="price">
+      <view>共计 <text>￥4500.00</text> 元</view>
+      <view>立即支付</view>
+    </view>
+  </popup>
+</view>

@@ -1,0 +1,44 @@
+<view class='my'>
+  <view class='title'>
+    <view>
+      <image mode="widthFix" src="/images/main-spimg.png"/>
+    </view>
+    <view>
+      <text>1246824867</text>
+    </view>
+  </view>
+  <view class='myul'>
+    <view class='myli' onTap="handleClickPush" data-id="0">
+      <text>• 我的订单</text>
+      <view>
+        <image mode="widthFix" src="/images/spxq-jr.png"/>
+      </view>
+    </view>
+    <view class='myli' onTap="handleClickPush" data-id="1">
+      <text>• 我的优惠券</text>
+      <view>
+        <text>2张即将过期</text>
+        <image mode="widthFix" src="/images/spxq-jr.png"/>
+      </view>
+    </view>
+    <view class='myli' onTap="handleClickPush" data-id="2">
+      <text>• 常见问题解答</text>
+      <view>
+        <image mode="widthFix" src="/images/spxq-jr.png"/>
+      </view>
+    </view>
+    <view class='myli' onTap="handleClickPush" data-id="3">
+      <text>• 联系客服</text>
+      <view>
+        <image mode="widthFix" src="/images/spxq-jr.png"/>
+      </view>
+    </view>
+    <view class='myli' onTap="handleClickPush" data-id="4">
+      <text>• 收货地址</text>
+      <view>
+        <image mode="widthFix" src="/images/spxq-jr.png"/>
+      </view>
+    </view>
+    
+  </view>
+</view>

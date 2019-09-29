@@ -1,0 +1,25 @@
+<view>
+  <collapse
+    className="demo-collapse"
+    collapseKey="collapse2"
+    activeKey="{{['item-21', 'item-23']}}"
+    onChange="onChange"
+    accordion="{{true}}"
+  >
+    <collapse-item header="1.租物规则" itemKey="item-21" collapseKey="collapse2">
+      <view class="item-content content1">
+        <view>内容区域</view>
+      </view>                
+    </collapse-item>
+    <collapse-item header="2.注意事项" itemKey="item-22" collapseKey="collapse2">
+      <view class="item-content content2">
+        <view>内容区域</view>
+      </view>
+    </collapse-item>
+    <collapse-item header="3.违规了会怎样？" itemKey="item-23" collapseKey="collapse2">
+      <view class="item-content content3">
+        <view>内容区域</view>         
+      </view>
+    </collapse-item>
+  </collapse>  
+</view>

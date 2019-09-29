@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "商品详情",
+  "usingComponents": {
+    "tabs": "mini-antui/es/tabs/index",
+    "tab-content": "mini-antui/es/tabs/tab-content/index",
+    "popup": "mini-antui/es/popup/index"
+    }
+}

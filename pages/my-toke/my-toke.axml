@@ -1,0 +1,56 @@
+<view class='toke'>
+  <view class='toke-item'>
+    <text class='sz'>王某某，广东省广州市从化区从化街道1502号院15栋1502</text>
+    <text>510000，15845678511</text>
+    <view class='item-view'>
+      <view class='item-text action'><text>默认地址</text></view>
+      <view class='item-img'>
+        <image mode="widthFix" src="/images/shdz-bj.png"/>
+        <image mode="widthFix" src="/images/wddd-delet.png"/>
+      </view>
+    </view>
+  </view>
+  <!-- 设为默认 -->
+  <view class='toke-item'>
+    <text class='sz'>王某某，广东省广州市从化区从化街道1502号院15栋1502</text>
+    <text>510000，15845678511</text>
+    <view class='item-view'>
+      <view class='item-text'><text>设为默认</text></view>
+      <view class='item-img'>
+        <image mode="widthFix" src="/images/shdz-bj.png"/>
+        <image mode="widthFix" src="/images/wddd-delet.png"/>
+      </view>
+    </view>
+  </view>
+  <view class="toke-item to" onTap="onButtomBtnTap">+ 添加新的收货地址</view>
+</view>
+<!-- 收货地址 -->
+<view>
+  <popup show="{{showBottom}}" position="bottom" onClose="onPopupClose" zIndex='9999'>
+    <view class="boxBottom">
+      <view class='b-item-title'>
+        <text>管理收货地址</text>
+        <image onTap="onPopupClose" mode="widthFix" src="/images/icon/x.png"/>
+      </view>
+      <view class='box-item'>
+        <text>收货人</text>
+        <input placeholder="请输入收货人的姓名" focus="{{true}}"/>
+      </view>
+      <view class='box-item'>
+        <text>联系方式</text>
+        <input placeholder="请输入收货人的联系方式" />
+      </view>
+      <view class='box-item city'>
+        <text>选择地址</text>
+        <input placeholder="请选择您的地址" value="{{citys}}"/>
+        <view onTap="handleClick" />
+      </view>
+      <view class='box-item'>
+        <text>详细地址</text>
+        <input placeholder="请输入门牌号、楼号等具体地址"/>
+      </view>
+      <view class="box-button"><text>确定</text></view>
+    </view>
+  </popup>
+</view>
+<address-picker visible="{{pickerVisible}}" onChange="addressPickerChange"></address-picker>

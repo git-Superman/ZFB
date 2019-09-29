@@ -1,0 +1,28 @@
+page{
+  background-color:#fff;
+}
+.search{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:12px;
+}
+.search-item{
+  width:100%;
+  display:flex;
+  align-items:center;
+  border:1px solid #8a8a8a;
+  padding:6px 12px;
+  border-radius: 20px 20px;
+}
+.search-item image{
+  width:26px;
+}
+.search-text{
+  display:block;
+  width:32px;
+  flex-shrink: 0;
+  color:#00A0E9;
+  margin-left:20px;
+}

@@ -1,0 +1,51 @@
+.titInput{
+  background-color:#fff;
+  display:flex;
+  justify-content: center;
+  padding:6px 0;
+}
+.titInput view{
+  background-color:rgba(0,0,0,.1);
+  display:flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:8px 12px;
+  width:90%;
+  border-radius:7px;
+  align-items:center;
+  color:#A7A7A7;
+}
+.titInput image{
+  width:20px;
+}
+.vtabs{
+  border-top:1px solid #E9E9E9;
+}
+.cart{
+  background-color:#fff;
+  box-sizing: border-box;
+  padding:4px;
+}
+.cont{
+  width:100%;
+  display:flex;
+  justify-content: space-evenly;
+  padding-bottom:3px;
+}
+.cont-item{
+  width:32%;
+  background-color:#F1F1F1;
+  font-size:10px;
+  box-sizing: border-box;
+  padding:3px;
+}
+.cont-item image{
+  width:100%;
+}
+.cont-item text{
+  display:block;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

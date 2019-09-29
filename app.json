@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/classfiyDetail/classfiyDetail",
+    "pages/my/my",
+    "pages/my-order/my-order",
+    "pages/my-benefit/my-benefit",
+    "pages/my-issue/my-issue",
+    "pages/my-toke/my-toke",
+    "pages/search/search"
+  ],
+  "window": {
+    "defaultTitle": "支付宝租赁店"
+  },
+  "tabBar": {
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "主页",
+        "icon": "images/icon/1.png",
+        "activeIcon": "images/icon/4.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "name": "分类",
+        "icon": "images/icon/2.png",
+        "activeIcon": "images/icon/5.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "name": "我的",
+        "icon": "images/icon/3.png",
+        "activeIcon": "images/icon/6.png"
+      }
+    ]
+  }
+}

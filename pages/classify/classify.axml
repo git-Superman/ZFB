@@ -1,0 +1,36 @@
+<view class='titInput'>
+  <view onTap="handleClick">
+    <text>搜索</text>
+    <image mode="widthFix" src="/images/icon/main-searchicon.png"/>
+  </view>
+</view>
+
+<view class='vtabs'>
+  <vtabs
+    tabs="{{tabs}}"
+    onTabClick="handleChange"
+    onChange="onChange"
+    activeTab="{{activeTab}}"
+  >
+    <block a:for="{{tabs}}">
+      <vtab-content anchor="{{item.anchor}}">
+        <view style='min-height:800px;' style=" box-sizing: border-box">
+            <view class='cart'>
+              <view class='cont'>
+                <view class='cont-item' onTap="handleClickPush" a:for="{{['',2,3]}}">
+                  <image mode="widthFix" src="/images/main-spimg.png"/>
+                  <text>camera单反相机</text>
+                </view>
+              </view>
+              <view class='cont'>
+                <view class='cont-item' onTap="handleClickPush" a:for="{{[1,2,3]}}">
+                  <image mode="widthFix" src="/images/main-spimg.png"/>
+                  <text>camera单反相机</text>
+                </view>
+              </view>
+            </view>
+        </view>
+      </vtab-content>
+    </block>
+  </vtabs>
+</view>

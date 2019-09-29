@@ -1,0 +1,87 @@
+<view class='order'>
+  <text a:for="{{list}}" class="{{inx == index ? 'action' : ''}}" onTap="handleInx" data-id="{{index}}">{{item}}</text>
+</view>
+<view class="boxBottom">
+  <view class='b-item-content'>
+    <view class='content-item' hidden="{{!(inx == 0)}}">
+      <view class='l'>
+        <text>¥ 10</text>
+        <text>新人优惠券</text>
+      </view>
+      <view class='r'>
+        <view>
+          <text>无门槛券</text>
+          <text>有效期至 2020.05.10</text>
+          <text>全场通用</text>
+        </view>
+        
+      </view>
+    </view>
+  <!-- 已使用 -->
+    <view class='content-item b'  hidden="{{!(inx == 1)}}">
+      <view class='l'>
+        <text>¥ 10</text>
+        <text>新人优惠券</text>
+      </view>
+      <view class='r'>
+        <view>
+          <text>无门槛券</text>
+          <text>有效期至 2020.05.10</text>
+          <text>全场通用</text>
+        </view>
+        <text class='btn'>
+          <image mode="widthFix" src="/images/wdyhq-ysyicon.png"/>
+        </text>
+      </view>
+    </view>
+    <view class='content-item b'  hidden="{{!(inx == 1)}}">
+      <view class='l'>
+        <text>¥ 10</text>
+        <text>新人优惠券</text>
+      </view>
+      <view class='r'>
+        <view>
+          <text>无门槛券</text>
+          <text>有效期至 2020.05.10</text>
+          <text>全场通用</text>
+        </view>
+        <text class='btn'>
+          <image mode="widthFix" src="/images/wdyhq-ysyicon.png"/>
+        </text>
+      </view>
+    </view>
+    <!-- 已过期 -->
+    <view class='content-item b'  hidden="{{!(inx == 2)}}">
+      <view class='l'>
+        <text>¥ 10</text>
+        <text>新人优惠券</text>
+      </view>
+      <view class='r'>
+        <view>
+          <text>无门槛券</text>
+          <text>有效期至 2020.05.10</text>
+          <text>全场通用</text>
+        </view>
+        <view class='btn'>
+          <image mode="widthFix" src="/images/wdyhq-ygqicon.png"/>
+        </view>
+      </view>
+    </view>
+    <view class='content-item b'  hidden="{{!(inx == 2)}}">
+      <view class='l'>
+        <text>¥ 10</text>
+        <text>新人优惠券</text>
+      </view>
+      <view class='r'>
+        <view>
+          <text>无门槛券</text>
+          <text>有效期至 2020.05.10</text>
+          <text>全场通用</text>
+        </view>
+        <text class='btn'>
+          <image mode="widthFix" src="/images/wdyhq-ygqicon.png"/>
+        </text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,140 @@
+<view class='bannerTitle'>
+  <image mode="widthFix" src="/images/spxq-bimg.png"/>
+  <image mode="widthFix" src="/images/spxq-zmxymyj.png"/>
+</view>
+<view class='content'>
+  <view class='oTop'>
+  <view class='left'>
+    <view class='t1'>
+      <text>租金</text>
+      <text>10.00/天起</text>
+      <text>（押金￥500.00）</text>
+    </view>
+    <text class='t2'>智慧城a3学习机学生平板电脑九门同步学习7寸双摄像头</text>
+    <view class='t3'>
+      <text>支持到期买断</text>
+      <text>60天起租</text>
+    </view>
+  </view>
+  <view class='right'>
+    <image mode="widthFix" src="/images/spxq-share.png"/>
+  </view>
+</view>
+<view class='oBot'>
+  <view class='oBot-item'>
+    <image mode="widthFix" src="/images/spxq-bzicon.png"/>
+    <text>芝麻信用免押金</text>
+  </view>
+  <view class='oBot-item'>
+    <image mode="widthFix" src="/images/spxq-bzicon.png"/>
+    <text>正品保障</text>
+  </view>
+  <view class='oBot-item'>
+    <image mode="widthFix" src="/images/spxq-bzicon.png"/>
+    <text>正品保障</text>
+  </view>
+</view>
+</view>
+<view class='title-lg' onTap="onButtomBtnTap">
+  <view class='title-lg-test'>
+    <text>领券</text>
+    <text>无门槛10元优惠券</text>
+  </view>
+  <view class='title-lg-nav'>
+    <image mode="widthFix" src="/images/spxq-jr.png"/>
+  </view>
+</view>
+
+<!-- 滑块 -->
+<view class='tabs'>
+  <tabs
+    tabs="{{tabs}}"
+    showPlus="{{true}}"
+    onTabClick="handleTabClick"
+    onChange="handleTabChange"
+    onPlusClick="handlePlusClick"
+    activeTab="{{activeTab}}"
+    swipeable="{{false}}"
+  >
+    <block a:for="{{tabs}}">
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:if="{{index === 1}}">
+        <view class="tab-content">
+          <image mode="widthFix" src="/images/spxq-xqyimg.png"/>
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 2}}">
+        <view class="tab-content">
+          <image mode="widthFix" src="/images/spxq-xqyimg.png"/>
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:else>
+        <view class="tab-content">
+          <image mode="widthFix" src="/images/spxq-xqyimg.png"/>
+        </view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>
+<!-- 优惠券 -->
+<view>
+  <popup show="{{showBottom}}" position="bottom" onClose="onPopupClose" zIndex='9999'>
+    <view class="boxBottom">
+      <view class='b-item-title'>
+        <text>优惠券</text>
+        <image onTap="onPopupClose" mode="widthFix" src="/images/icon/x.png"/>
+      </view>
+      <view class='b-item-content'>
+        <view class='content-item'>
+          <view class='l'>
+            <text>¥ 10</text>
+            <text>新人优惠券</text>
+          </view>
+          <view class='r'>
+            <view>
+              <text>无门槛券</text>
+              <text>有效期至 2020.05.10</text>
+              <text>全场通用</text>
+            </view>
+            <text class='btn'>
+              领取
+            </text>
+          </view>
+        </view>
+
+        <view class='content-item'>
+          <view class='l'>
+            <text>¥ 10</text>
+            <text>新人优惠券</text>
+          </view>
+          <view class='r'>
+            <view>
+              <text>无门槛券</text>
+              <text>有效期至 2020.05.10</text>
+              <text>全场通用</text>
+            </view>
+            <text class='btn action'>
+              领取
+            </text>
+          </view>
+        </view>
+
+      </view>
+      <view class='button'>
+          一键领取
+      </view>
+    </view>
+  </popup>
+</view>
+
+<!-- 立即租赁 -->
+<view class='footer'>
+  <view class='f-l'>
+    <image mode="widthFix" src="/images/spxq-zy.png"/>
+    <image mode="widthFix" src="/images/spxq-kf.png"/>
+  </view>
+  <view class='f-r'>
+    <text>月租</text>
+    <text>￥500.00</text>
+    <text>立即租赁</text>
+  </view>
+</view>
