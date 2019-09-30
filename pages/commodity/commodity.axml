@@ -1,0 +1,79 @@
+<view>
+  <popup show="{{showBottom}}" position="bottom" onClose="onPopupClose" zIndex='9999' disableScroll="{{false}}">
+    <!-- <image onTap="onPopupClose" mode="widthFix" src="/images/icon/x.png"/> -->
+    <scroll-view scroll-y="{{true}}" style="height: 620px;">
+      
+    <view class="title"/>
+    <view class="commodity">
+      <view class="commodity-item">
+        <view class="item-t">
+          <view>
+            <image mode="widthFix" src="/images/zf-img.png"/>
+            <view>￥200.00/月起</view>
+          </view>  
+        </view>
+        <view class="item-b">
+          <text class="a">智慧城a3学习机学生平板电脑九门同步学习7寸双摄像头</text>
+          <text>到期买断金：￥3254.00</text>
+          <text>总租金：￥5000.00</text>
+          <text class="c">支付宝已免押</text>
+        </view>
+      </view>
+      <text class="commodity-text hr">型号/规格</text>
+      <view class="commodity-bot">
+        <text>蓝色</text>
+        <text class="action">白色</text>
+      </view>
+      <text class="commodity-text">租期</text>
+      <view class="commodity-bot">
+        <text>3期(到期归还)</text>
+        <text class="action">5期(期满免归还)</text>
+      </view>
+      <text class="commodity-text">租赁方式</text>
+      <view class="commodity-bot">
+        <text>自取</text>
+        <text class="action">邮寄</text>
+      </view>
+      <text class="commodity-text">专属服务（多选）</text>
+      <view class="commodity-serve">
+        <text>碎屏增值服务</text>
+        <view>
+          <text>￥100.00</text>
+          <image mode="widthFix" src="/images/zf-xz.png"/>
+        </view>
+      </view>
+      <view class="commodity-serve">
+        <text>键盘损坏服务</text>
+        <view>
+          <text>￥220.00</text>
+          <image mode="widthFix" src="/images/zf-wxz.png"/>
+        </view>
+      </view>
+      <text class="commodity-text">优惠券</text>
+      <view class="commodity-serve a">
+        <text>新会员专属无门槛优惠券</text>
+        <view>
+          <text>-￥10.00</text>
+          <image mode="widthFix" src="/images/spxq-jr.png"/>
+        </view>
+      </view>
+      <text class="commodity-text">收货地址</text>
+      <view class="commodity-serve a b">
+        <text>张一二，湖南省长沙市芙蓉区川河街道15号院9南省长沙市芙蓉区川河街道15号院9</text>
+        <view>
+          <image mode="widthFix" src="/images/spxq-jr.png"/>
+        </view>
+      </view>
+       <text class="commodity-text-right">* 邮费 ￥8.00元</text>
+    </view>
+   
+      <view class="commodity-button">
+        <view>
+            <view>共计<text>￥2015.38 </text>元</view>
+            <text>（包含运费，共优惠￥10.00）</text>
+        </view>
+        <view onTap="handleClick">立即支付</view>
+      </view>
+      </scroll-view>
+  </popup>
+</view> 

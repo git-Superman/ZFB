@@ -11,6 +11,12 @@ Page({
     ],
     activeTab: 0,
     showBottom: false,
+    str : false
+  },
+  handleClick(){
+    this.setData({
+      str : true
+    })
   },
   handleTabClick({ index }) {
     this.setData({

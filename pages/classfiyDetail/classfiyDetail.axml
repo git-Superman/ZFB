@@ -1,3 +1,4 @@
+<commodity showBottom="{{str}}"></commodity>
 <view class='bannerTitle'>
   <image mode="widthFix" src="/images/spxq-bimg.png"/>
   <image mode="widthFix" src="/images/spxq-zmxymyj.png"/>
@@ -135,6 +136,6 @@
   <view class='f-r'>
     <text>月租</text>
     <text>￥500.00</text>
-    <text>立即租赁</text>
+    <text onTap="handleClick">立即租赁</text>
   </view>
 </view>
