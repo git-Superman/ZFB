@@ -1,7 +1,7 @@
 <view class='search'>
   <view class='search-item'>
     <image mode="widthFix" src="/images/search.png" />
-    <input placeholder="Input"  focus="{{true}}"/>
+    <input placeholder="Input" onInput="handleClick" value="{{value}}" data-value="{{value}}" focus="{{true}}"/>
   </view>
   <text class='search-text' onTap="handleClickPush">取消</text>
 </view>

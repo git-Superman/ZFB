@@ -1,8 +1,8 @@
 <!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
-<swiper indicator-dots="{{true}}" >
-  <block a:for="{{['#4A90E2','#F5A623']}}">
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}">
+  <block a:for="{{banner}}" a:key="index" a:if="{{item}}">
     <swiper-item class='swiper-item'>
-      <image mode="aspectFill" src="/images/main-banner.png"/>
+      <image lazy-load="{{true}}" mode="aspectFill" src="{{item}}"/>
     </swiper-item>
   </block>
 </swiper>
@@ -16,11 +16,11 @@
 
 <view class='activity'>
   <view class='activity-left'>
-    <image src="/images/main-ggw1.png"/>
+    <image lazy-load="{{true}}" src="{{advertising[0]}}"/>
   </view>
   <view class='activity-right'>
-    <image src="/images/main-ggw2.png"/>
-    <image src="/images/main-ggw3.png"/>
+    <image lazy-load="{{true}}" src="{{advertising[1]}}"/>
+    <image lazy-load="{{true}}" src="{{advertising[2]}}"/>
   </view>
 </view>
 
@@ -49,14 +49,13 @@
     <image mode="widthFix" src="/images/main-rmfltitle.png"/>
   </view>
   <view class='icon'>
-    <view class='icon-item' a:for="{{icon}}">
-      <image mode="widthFix" src="{{item.url}}"/>
-      <text>{{item.text}}</text>
+    <view class='icon-item' a:for="{{icon}}" onTap="handleClickg" data-id="{{item.id}}">
+      <image mode="widthFix" lazy-load="{{true}}" src="{{item.logo}}"/>
+      <text>{{item.name}}</text>
     </view>
   </view>
 </view>
-
-
+ 
 <view class='cart'>
   <view class='title'>
     <image mode="widthFix" src="/images/main-hwtjtitle.png"/>

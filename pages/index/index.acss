@@ -49,7 +49,8 @@ page{
 .activity-left image,.activity-right image{
   width:100%;
   height:100%;
-}
+  border-radius:7px
+} 
 .activity-right{
   width:60%;
   font-size:0;
@@ -103,21 +104,29 @@ text.red{
 .icon{
   display:flex;
   align-items:center;
+  overflow-x:auto;
 }
 .icon-item{
-  width:25%;
   display:flex;
   justify-content: center;
   align-items:center;
   background-color:#fff;
   border-radius:6px;
-  padding:8px 0;
+  padding:8px 14px;
   font-size:14px;
+  flex-shrink: 0;
+  height:20px;
 }
 .icon .icon-item + .icon-item{
   margin-left:6px;
 }
 .icon-item image{
   width:20px;
+  flex-shrink: 0;
   margin-right:5px;
+}
+.icon-item text{
+  white-space: nowrap;
+  overflow: hidden;
+  font-size:12px;
 }

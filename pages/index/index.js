@@ -1,30 +1,49 @@
+const request = require("/config/request");
+import base from '/config/base'
+
 Page({
   data : {
-    icon : [
-        {
-          url : '/images/icon/main-sjfl.png',
-          text : '手机'
-        },
-        {
-          url : '/images/icon/main-dnfl.png',
-          text : '电脑'
-        },
-        {
-          url : '/images/icon/main-smfl.png',
-          text : '数码'
-        },
-        {
-          url : '/images/icon/main-myfl.png',
-          text : '母婴'
-        },
-      ]
+    icon : [],
+      banner : [],
+      advertising : []
   },
   handleClick(){
     my.navigateTo({ url: '../search/search' })
   },
   onLoad(query) {
     // 页面加载
-    console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
+    // 轮播图
+  request.banner("/Banner/GetList").then(data=>{
+    var banner = data.map(item=>item.contents = base.imgURL + item.contents)
+    this.setData({ banner })
+  })
+  // 广告
+  request.banner("/Banner/GetAdvertList").then(data=>{
+    var advertising = data.map(item=>item.contents = base.imgURL + item.contents)
+    this.setData({ advertising });
+  })
+  // 分类
+  request.banner("/Shop/GetCategoryFirst").then(data=>{
+    var icon = data;
+    icon.forEach(item=>{
+      item.logo = base.imgURL + item.logo;
+    })
+    console.log(icon);
+    this.setData({
+      icon
+    });
+    var id = "id="+icon[0].id;
+    request.banner("/Shop/GetCategorySecond",id).then(data=>{
+      console.log(data);
+    })
+
+  })
+
+  
+  },
+  handleClickg(event){
+    var id = event.currentTarget.dataset.id;
+    console.log(id);
   },
   onReady() {
     // 页面加载完成

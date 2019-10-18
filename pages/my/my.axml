@@ -1,10 +1,10 @@
 <view class='my'>
   <view class='title'>
     <view>
-      <image mode="widthFix" src="/images/main-spimg.png"/>
+      <image mode="widthFix" src="{{avatar}}"/>
     </view>
     <view>
-      <text>1246824867</text>
+      <text>{{nickName}}</text>
     </view>
   </view>
   <view class='myul'>
@@ -13,7 +13,7 @@
       <view>
         <image mode="widthFix" src="/images/spxq-jr.png"/>
       </view>
-    </view>
+    </view> 
     <view class='myli' onTap="handleClickPush" data-id="1">
       <text>• 我的优惠券</text>
       <view>

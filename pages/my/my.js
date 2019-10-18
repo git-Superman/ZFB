@@ -1,5 +1,8 @@
 Page({
-  data: {},
+  data: {
+    nickName:'',
+    avatar:''
+  },
   handleClickPush(event){
     var e = Number(event.currentTarget.dataset.id);
     switch(e){
@@ -22,5 +25,28 @@ Page({
       break;
     }
   },
-  onLoad() {},
+  onLoad() {
+      
+    my.getAuthCode({
+    
+    scopes: 'auth_user',
+    
+    success: (res) => { //获取用户信息
+        my.getAuthUserInfo({
+        success: (res) => {
+          var nickName = res.nickName;
+          var avatar = res.avatar;
+          this.setData({
+            nickName,
+            avatar
+          })
+          
+          }
+        
+        });
+    
+    },
+    
+    })
+  },
 });
